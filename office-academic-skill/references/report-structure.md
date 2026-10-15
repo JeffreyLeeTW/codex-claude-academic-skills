@@ -5,25 +5,25 @@ Use this structure when generating literature report documents from academic pap
 ## Bilingual Report
 
 Title page:
-- Paper title / 论文标题
+- Paper title / 論文標題
 - Authors / 作者
-- Venue and year / 期刊会议与年份
-- DOI, arXiv, URL, or source file / 文献来源
-- Report generation date / 汇报生成日期
+- Venue and year / 期刊會議與年份
+- DOI, arXiv, URL, or source file / 文獻來源
+- Report generation date / 匯報生成日期
 
-1. Executive Summary / 快速总览
-- Research question / 研究问题
+1. Executive Summary / 快速總覽
+- Research question / 研究問題
 - Core method / 核心方法
-- Main finding / 主要发现
-- Why it matters / 学术或工程意义
+- Main finding / 主要發現
+- Why it matters / 學術或工程意義
 - Evidence label for each key point
 
-2. Reading Map / 阅读导图
+2. Reading Map / 閱讀導圖
 - Suggested reading order
 - Important sections, figures, tables, and equations
 - What to focus on when preparing a group meeting or presentation
 
-3. Background and Motivation / 背景与动机
+3. Background and Motivation / 背景與動機
 - Field context
 - Unsolved problem or limitation in prior work
 - Paper's stated objective
@@ -34,19 +34,19 @@ Title page:
 - Formula list with variable definitions, units, and assumptions
 - Implementation details if present
 
-5. Experiments or Evidence / 实验、仿真或论证证据
+5. Experiments or Evidence / 實驗、仿真或論證證據
 - Dataset/sample/device/software/environment
 - Parameter settings
 - Baselines or controls
 - Evaluation metrics
 
-6. Results / 结果分析
+6. Results / 結果分析
 - Key quantitative results
 - Figure/table-by-figure/table interpretation
 - What each result supports
 - Any contradictory or weak evidence
 
-7. Contributions and Novelty / 创新点
+7. Contributions and Novelty / 創新點
 - Contribution claimed by the authors
 - Evidence from the paper
 - Whether the novelty is methodological, experimental, theoretical, application-oriented, or system-level
@@ -56,21 +56,21 @@ Title page:
 - Limitations inferred from scope, assumptions, dataset, sample size, metrics, or missing ablation
 - Label inferred points clearly
 
-9. Reproducibility / 可复现要点
+9. Reproducibility / 可覆現要點
 - Required data, code, instruments, software, versions, parameters, and steps
 - Missing details that prevent reproduction
 
-10. Relationship to User Topic / 与用户课题关系
+10. Relationship to User Topic / 與用戶課題關系
 - Directly reusable ideas
 - Cautions before reuse
 - Possible extension experiments or simulations
 
-11. Presentation Notes / 汇报讲稿要点
+11. Presentation Notes / 匯報講稿要點
 - 5-minute version
 - 10-minute version
 - likely questions from supervisor or audience
 
-12. Reference Trace Table / 原文依据索引表
+12. Reference Trace Table / 原文依據索引表
 - Claim
 - Source location
 - Evidence type: text, equation, figure, table, experiment
@@ -81,35 +81,35 @@ Title page:
 Use the same intellectual structure, but make all explanatory prose Chinese. Preserve English titles, model names, software names, formulas, variable symbols, datasets, and cited reference names.
 
 Recommended Chinese headings:
-- 文献信息
-- 一页式摘要
-- 阅读路线
-- 研究背景与问题
-- 方法与模型
-- 实验/仿真/数据设置
-- 结果与图表解读
-- 创新点与贡献
-- 局限性与边界条件
-- 可复现要点
-- 与用户课题的关系
-- 汇报讲稿要点
-- 原文依据索引表
+- 文獻信息
+- 一頁式摘要
+- 閱讀路線
+- 研究背景與問題
+- 方法與模型
+- 實驗/仿真/數據設置
+- 結果與圖表解讀
+- 創新點與貢獻
+- 局限性與邊界條件
+- 可覆現要點
+- 與用戶課題的關系
+- 匯報講稿要點
+- 原文依據索引表
 
 ## Evidence Label Format
 
 Preferred:
-- `来源: Section 2.1, p. 3`
-- `来源: Methods, pp. 4-5, Eq. (3)`
-- `来源: Results, Fig. 5 and Table 2`
-- `来源: 原文 Discussion, p. 9`
+- `來源: Section 2.1, p. 3`
+- `來源: Methods, pp. 4-5, Eq. (3)`
+- `來源: Results, Fig. 5 and Table 2`
+- `來源: 原文 Discussion, p. 9`
 
 If exact location is unavailable:
-- `来源: 原文未提供页码；见 Results 小节关于 Fig. 4 的段落`
-- `来源: PDF 文本提取未识别章节号；见第 6 页表格下方段落`
+- `來源: 原文未提供頁碼；見 Results 小節關於 Fig. 4 的段落`
+- `來源: PDF 文本提取未識別章節號；見第 6 頁表格下方段落`
 
 Inference labels:
-- `推断: 基于作者实验设置和缺失消融项`
-- `建议: 可作为后续仿真实验方向，非原文结论`
+- `推斷: 基於作者實驗設置和缺失消融項`
+- `建議: 可作為後續仿真實驗方向，非原文結論`
 
 ## Quality Checklist
 
