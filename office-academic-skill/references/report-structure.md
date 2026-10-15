@@ -34,7 +34,7 @@ Title page:
 - Formula list with variable definitions, units, and assumptions
 - Implementation details if present
 
-5. Experiments or Evidence / 實驗、仿真或論證證據
+5. Experiments or Evidence / 實驗、模擬或論證證據
 - Dataset/sample/device/software/environment
 - Parameter settings
 - Baselines or controls
@@ -51,7 +51,7 @@ Title page:
 - Evidence from the paper
 - Whether the novelty is methodological, experimental, theoretical, application-oriented, or system-level
 
-8. Limitations / 局限性
+8. Limitations / 侷限性
 - Limitations stated by the authors
 - Limitations inferred from scope, assumptions, dataset, sample size, metrics, or missing ablation
 - Label inferred points clearly
@@ -60,7 +60,7 @@ Title page:
 - Required data, code, instruments, software, versions, parameters, and steps
 - Missing details that prevent reproduction
 
-10. Relationship to User Topic / 與用戶課題關系
+10. Relationship to User Topic / 與使用者課題關系
 - Directly reusable ideas
 - Cautions before reuse
 - Possible extension experiments or simulations
@@ -81,17 +81,17 @@ Title page:
 Use the same intellectual structure, but make all explanatory prose Chinese. Preserve English titles, model names, software names, formulas, variable symbols, datasets, and cited reference names.
 
 Recommended Chinese headings:
-- 文獻信息
+- 文獻資訊
 - 一頁式摘要
 - 閱讀路線
 - 研究背景與問題
 - 方法與模型
-- 實驗/仿真/數據設置
+- 實驗/模擬/資料設定
 - 結果與圖表解讀
 - 創新點與貢獻
-- 局限性與邊界條件
+- 侷限性與邊界條件
 - 可覆現要點
-- 與用戶課題的關系
+- 與使用者課題的關系
 - 匯報講稿要點
 - 原文依據索引表
 
@@ -105,11 +105,11 @@ Preferred:
 
 If exact location is unavailable:
 - `來源: 原文未提供頁碼；見 Results 小節關於 Fig. 4 的段落`
-- `來源: PDF 文本提取未識別章節號；見第 6 頁表格下方段落`
+- `來源: PDF 文字提取未識別章節號；見第 6 頁表格下方段落`
 
 Inference labels:
-- `推斷: 基於作者實驗設置和缺失消融項`
-- `建議: 可作為後續仿真實驗方向，非原文結論`
+- `推斷: 基於作者實驗設定和缺失消融項`
+- `建議: 可作為後續模擬實驗方向，非原文結論`
 
 ## Quality Checklist
 

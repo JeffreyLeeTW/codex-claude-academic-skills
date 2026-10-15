@@ -7,7 +7,7 @@ description: Research computing toolkit for optoelectronic information science a
 
 ## Scope
 
-Use this skill for科研计算 and software-assisted research:
+Use this skill for科研計算 and software-assisted research:
 
 - MATLAB/Octave scripts, debugging, refactoring, signal/image processing, FFT, filtering, matrix computation, simulation, and figure export.
 - Python scientific workflows with NumPy, SciPy, pandas, matplotlib, seaborn, scikit-learn, statsmodels, SymPy, and related tools.
@@ -18,11 +18,11 @@ Use `research-writing-skill` for manuscript prose. Use `office-academic-skill` f
 
 ## Domain Defaults
 
-The user's field is光电信息科学与工程. Prefer examples and checks relevant to:
+The user's field is光電資訊科學與工程. Prefer examples and checks relevant to:
 
 - Optics, optoelectronics, optical communication, optical sensing, fiber sensing, BOTDR/BOTDA, BGS, SPM, dispersion, noise, and deconvolution.
 - Signal processing, image processing, spectroscopy, detector data, sensor time series, calibration, and uncertainty.
-- MATLAB simulation and reproducible figure generation for论文/答辩.
+- MATLAB simulation and reproducible figure generation for論文/答辯.
 
 Do not fabricate physical parameters, material constants, software menu operations, experimental results, or paper conclusions. When uncertain, ask for the source file or mark the assumption.
 

@@ -7,7 +7,7 @@ from pathlib import Path
 
 TEXT_EXTS = {".tex", ".bib", ".md", ".txt"}
 FIG_EXTS = {".png", ".jpg", ".jpeg", ".svg", ".pdf"}
-FIG_DIR_HINTS = ("figure", "fig", "image", "img", "图", "插图")
+FIG_DIR_HINTS = ("figure", "fig", "image", "img", "圖", "插圖")
 
 
 def read_pdf(path: Path, max_pages: int | None = None) -> str:
@@ -91,7 +91,7 @@ def collect_files(root: Path) -> tuple[list[Path], list[Path], list[Path]]:
 def pick_main_pdf(pdfs: list[Path]) -> Path | None:
     if not pdfs:
         return None
-    names = ("thesis", "main", "paper", "论文", "毕业")
+    names = ("thesis", "main", "paper", "論文", "畢業")
     scored = []
     for p in pdfs:
         score = sum(1 for n in names if n.lower() in p.name.lower())

@@ -1,20 +1,20 @@
 """Dump every slide's shape/text/table/picture inventory to a Markdown file.
 
-迭代填充时强烈推荐先跑这个脚本拿到模板/骨架的真实文本,再去构造
-``replace_exact_text`` 的 dict 或 ``write_table`` 的二维数组。直接靠肉眼
-猜模板里的字符串很容易因为标点/空格/引号种类不一致而漏替换。
+迭代填充時強烈推薦先跑這個指令碼拿到模板/骨架的真實文字,再去構造
+``replace_exact_text`` 的 dict 或 ``write_table`` 的二維陣列。直接靠肉眼
+猜模板裡的字串很容易因為標點/空格/引號種類不一致而漏替換。
 
 Usage::
 
     python dump_pptx_content.py --pptx deck.pptx --output dump.md
 
-输出会按 slide 编号分节,每节列出:
+輸出會按 slide 編號分節,每節列出:
 
-- 每个 shape 的索引/名称/类型/文本 (text_frame)
-- 每个 table 的二维内容
-- 每张 picture 的 shape.name + 尺寸 + 位置
+- 每個 shape 的索引/名稱/型別/文字 (text_frame)
+- 每個 table 的二維內容
+- 每張 picture 的 shape.name + 尺寸 + 位置
 
-文件用 UTF-8 写盘,可以直接交给后续脚本做精确替换。
+檔案用 UTF-8 寫盤,可以直接交給後續指令碼做精確替換。
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ from pathlib import Path
 from pptx import Presentation
 from pptx.util import Emu
 
-# Windows 默认 stdout 是 cp936/gbk,中文/特殊字符易触发 UnicodeEncodeError。
+# Windows 預設 stdout 是 cp936/gbk,中文/特殊字元易觸發 UnicodeEncodeError。
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
@@ -132,8 +132,8 @@ def main() -> int:
         layout_name = getattr(slide.slide_layout, "name", "?")
         out_lines.append(f"## Slide {idx} (layout: {layout_name})")
         out_lines.append("")
-        # 注意:这里只遍历直接子 shapes,group 内部由 dump_shape 递归处理,
-        # 保留缩进层级,便于看清模板嵌套结构。
+        # 注意:這裡只遍歷直接子 shapes,group 內部由 dump_shape 遞迴處理,
+        # 保留縮排層級,便於看清模板巢狀結構。
         for shape in slide.shapes:
             out_lines.extend(dump_shape(shape, depth=0))
         out_lines.append("")

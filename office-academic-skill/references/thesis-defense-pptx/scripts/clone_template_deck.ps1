@@ -10,8 +10,8 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-# Windows 默认 console 是 cp936/gbk，输出含中文路径的字符串会乱码。
-# 强制切到 UTF-8 让 stdout 稳定可读，便于 Codex/Claude Code 解析返回值。
+# Windows 預設 console 是 cp936/gbk，輸出含中文路徑的字串會亂碼。
+# 強制切到 UTF-8 讓 stdout 穩定可讀，便於 Codex/Claude Code 解析返回值。
 try {
     [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
     $OutputEncoding = [System.Text.Encoding]::UTF8

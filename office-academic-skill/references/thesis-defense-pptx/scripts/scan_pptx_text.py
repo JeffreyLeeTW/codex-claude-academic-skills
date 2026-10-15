@@ -7,8 +7,8 @@ from pathlib import Path
 
 from pptx import Presentation
 
-# Windows 默认 stdout 是 cp936/gbk，遇到 −/✓/Δ 等 Unicode 字符会 UnicodeEncodeError。
-# 这里强制切到 UTF-8，errors=replace 兜底以避免脚本因终端编码崩溃。
+# Windows 預設 stdout 是 cp936/gbk，遇到 −/✓/Δ 等 Unicode 字元會 UnicodeEncodeError。
+# 這裡強制切到 UTF-8，errors=replace 兜底以避免指令碼因終端編碼崩潰。
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
