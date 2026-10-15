@@ -20,7 +20,7 @@ Do not use this skill for pure manuscript prose drafting without a Word/PPT deli
 
 - Default to Chinese for explanations, Word report prose, slide text, outlines, and speaker notes.
 - Preserve English titles, formulas, variables, model names, software commands, reference entries, and direct source labels.
-- Distinguish `论文原文`, `图表/公式证据`, `代码或仿真结果`, `根据上下文推断`, and `建议`.
+- Distinguish `論文原文`, `圖表/公式證據`, `代碼或仿真結果`, `根據上下文推斷`, and `建議`.
 - Do not invent DOI, authors, journal details, experiment values, figure numbers, section names, page numbers, or conclusions.
 - Attach source labels to claims, parameters, quantitative results, formula explanations, datasets, figures, limitations, and novelty statements.
 
@@ -37,7 +37,7 @@ Before writing, build a source map:
 - Title, authors, venue, year, DOI/arXiv if present.
 - Section headings and page spans when available.
 - Figures, tables, equations, datasets, hardware/software, and evaluation settings that support key claims.
-- Uncertain or missing metadata marked as `未在原文中明确给出`.
+- Uncertain or missing metadata marked as `未在原文中明確給出`.
 
 Use `references/report-structure.md` for the default report structure and evidence-label format.
 
